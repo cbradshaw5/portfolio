@@ -25,43 +25,6 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Resume Timeline Styling */
-.timeline-item {
-    position: relative;
-    padding-left: 2.5rem;
-    border-left: 2px solid #1e293b;
-    margin-bottom: 2rem;
-}
-
-.timeline-icon {
-    position: absolute;
-    left: -13px;
-    top: 0;
-    background: var(--primary);
-    border-radius: 50%;
-    padding: 6px;
-    width: 24px;
-    height: 24px;
-}
-
-/* Skill Badges */
-.badge {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-family: monospace;
-}
-
-footer {
-    border-top: 2px solid var(--accent);
-    padding: 2rem;
-    text-align: center;
-    font-size: 0.875rem;
-    color: var(--text-muted);
-}
-
-/* Navigation Layout */
 .nav-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -90,4 +53,21 @@ footer {
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--primary);
+}
+
+/* UI Elements */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: monospace;
 }
