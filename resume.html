@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><link rel="stylesheet" href="styles.css"><title>Resume | Charles Bradshaw</title></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Charles Bradshaw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header class="nav-container">
         <nav class="nav-content">
@@ -13,28 +19,45 @@
             </ul>
         </nav>
     </header>
+
     <main class="max-w-3xl mx-auto py-12 px-6">
-        <h2 class="text-3xl font-bold mb-8">Education</h2>
+        <h2 class="text-3xl font-bold mb-8 text-blue-500">Education</h2>
         <div class="card mb-12">
             <p class="text-xl font-bold">Salisbury University | 4.0 GPA</p>
-            <p class="text-slate-400">B.S. Computer Science & Data Science | Expected 05/2027</p>
+            <p class="text-slate-400">B.S. Computer Science & Data Science | Minor in Mathematics</p>
+            <p class="text-slate-400 text-sm mt-1">Expected Graduation: May 2027 | Dean's List every semester</p>
         </div>
-        <h2 class="text-3xl font-bold mb-8">Experience</h2>
+
+        <h2 class="text-3xl font-bold mb-8 text-blue-500">Experience</h2>
+
         <div class="card mb-6">
-            <h4 class="font-bold">Undergraduate Researcher | Salisbury Robotics Lab</h4>
-            <p class="text-slate-400 text-sm">Programmed Unitree G1 humanoid; studied ROS2, Euler Angles, and LiDAR.</p>
+            <h4 class="font-bold">Undergraduate Researcher | Salisbury University Robotics Lab</h4>
+            <p class="text-slate-400 text-sm">Feb 2026 – Present</p>
+            <p class="text-slate-300 mt-2 text-sm">Programming a Unitree G1 humanoid robot for construction tasks. Researching ROS2, Euler Angles, and LiDAR point clouds. Created technical guides for robot connection and visualization.</p>
         </div>
+
         <div class="card mb-6">
             <h4 class="font-bold">Summer Intern | NIST</h4>
-            <p class="text-slate-400 text-sm">Developed mobile manipulator test apparatus; CAD (Autodesk Inventor), CNC, 3D printing.</p>
+            <p class="text-slate-400 text-sm">May 2025 – Aug 2025</p>
+            <p class="text-slate-300 mt-2 text-sm">Developed test apparatus for mobile manipulator performance. Utilized CAD (Autodesk Inventor) for 3D modeling, 3D printing, and CNC machining. Received safety training for lasers and electrical systems.</p>
         </div>
+
         <div class="card mb-6">
-            <h4 class="font-bold">Lab Assistant | SU Computer Science Dept</h4>
-            <p class="text-slate-400 text-sm">Guided students in Java/C++ fundamentals, proctored exams.</p>
+            <h4 class="font-bold">Lab Assistant | Salisbury University CS Dept</h4>
+            <p class="text-slate-400 text-sm">09/2024 – 12/2024, 09/2025 – 12/2025</p>
+            <p class="text-slate-300 mt-2 text-sm">Assisted students in Java and C++ programming fundamentals. Provided assignment guidance, proctored exams, and managed lab troubleshooting.</p>
         </div>
-        <h2 class="text-3xl font-bold mb-8">Skills</h2>
+
+        <div class="card mb-6">
+            <h4 class="font-bold">Banquet Server | Encore Catering</h4>
+            <p class="text-slate-400 text-sm">08/2019 – Present</p>
+            <p class="text-slate-300 mt-2 text-sm">Managed event setup and customer service operations, trained new staff, and ensured high standards were maintained in high-pressure environments.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-8 text-blue-500">Technical Skills</h2>
         <div class="flex flex-wrap gap-2">
-            <span class="badge">C++</span><span class="badge">Java</span><span class="badge">Python</span><span class="badge">ROS2</span><span class="badge">Linux</span><span class="badge">R</span>
+            <span class="badge">C++</span><span class="badge">Java</span><span class="badge">Python</span><span class="badge">R</span>
+            <span class="badge">ROS2</span><span class="badge">LiDAR</span><span class="badge">Linux</span><span class="badge">CAD</span>
         </div>
     </main>
 </body>
