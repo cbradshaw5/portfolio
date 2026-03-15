@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Work & Projects | Charles Bradshaw</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav-container">
-    <nav class="nav-content">
-        <h1 class="font-bold text-lg">CHARLES BRADSHAW</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="nav-container">
+        <nav class="nav-content flex justify-between items-center py-4">
+            <h1 class="font-bold text-lg">CHARLES BRADSHAW</h1>
+            <ul class="flex gap-6 nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="work.html" class="active">WORK</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="max-w-7xl mx-auto py-12 px-6">
         <h2 class="text-4xl font-black mb-12">Engineering Experience</h2>
@@ -26,22 +25,29 @@
             <article class="glass-card">
                 <img src="image_e770f7.jpg" alt="Unitree G1 Robot" class="w-full h-64 object-cover">
                 <div class="p-8">
-                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Research • ROS2 • LiDAR</span>
+                    <div class="flex gap-2 mb-4">
+                        <span class="badge">ROS2</span>
+                        <span class="badge">LiDAR</span>
+                        <span class="badge">PYTHON</span>
+                    </div>
                     <h3 class="text-2xl font-bold mt-2">Salisbury University Robotics Lab</h3>
-                    <p class="text-slate-400 mt-4 leading-relaxed">Currently programming a Unitree G1 humanoid robot for construction tasks. My research focuses on ROS2 integration, Euler Angles for motion control, and LiDAR point cloud visualization.</p>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Programming a Unitree G1 humanoid robot for construction tasks. Research focuses on ROS2 integration, Euler Angles, and LiDAR point cloud visualization.</p>
                 </div>
             </article>
 
             <article class="glass-card">
                 <img src="image_e770f7.jpg" alt="NIST Lab" class="w-full h-64 object-cover">
                 <div class="p-8">
-                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Internship • CAD • CNC</span>
+                    <div class="flex gap-2 mb-4">
+                        <span class="badge">CAD</span>
+                        <span class="badge">CNC</span>
+                        <span class="badge">C++</span>
+                    </div>
                     <h3 class="text-2xl font-bold mt-2">NIST SURF Program 2025</h3>
-                    <p class="text-slate-400 mt-4 leading-relaxed">Developed a specialized test apparatus for measuring mobile manipulator performance. Utilized Autodesk Inventor for CAD modeling and CNC machining for hardware prototyping.</p>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Developed test apparatus for mobile manipulators. Utilized Autodesk Inventor for CAD modeling and CNC machining for hardware prototyping.</p>
                 </div>
             </article>
         </div>
     </main>
-    <footer><p class="text-slate-500">© 2026 Charles Bradshaw</p></footer>
 </body>
 </html>
