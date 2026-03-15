@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work & Projects | Charles Bradshaw</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="nav-container">
-        <nav class="nav-content flex justify-between items-center py-4">
+        <nav class="nav-content">
             <h1 class="font-bold text-lg">CHARLES BRADSHAW</h1>
-            <ul class="flex gap-6 nav-links">
+            <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="work.html" class="active">WORK</a></li>
                 <li><a href="resume.html">RESUME</a></li>
@@ -21,15 +22,12 @@
 
     <main class="max-w-7xl mx-auto py-12 px-6">
         <h2 class="text-4xl font-black mb-12">Engineering Experience</h2>
+
         <div class="grid md:grid-cols-2 gap-8">
             <article class="glass-card">
                 <img src="image_e770f7.jpg" alt="Unitree G1 Robot" class="w-full h-64 object-cover">
                 <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="badge">ROS2</span>
-                        <span class="badge">LiDAR</span>
-                        <span class="badge">PYTHON</span>
-                    </div>
+                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Research • ROS2 • LiDAR</span>
                     <h3 class="text-2xl font-bold mt-2">Salisbury University Robotics Lab</h3>
                     <p class="text-slate-400 mt-4 leading-relaxed">Programming a Unitree G1 humanoid robot for construction tasks. Research focuses on ROS2 integration, Euler Angles, and LiDAR point cloud visualization.</p>
                 </div>
@@ -38,42 +36,29 @@
             <article class="glass-card">
                 <img src="image_e770f7.jpg" alt="NIST Lab" class="w-full h-64 object-cover">
                 <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="badge">CAD</span>
-                        <span class="badge">CNC</span>
-                        <span class="badge">C++</span>
-                    </div>
+                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Internship • CAD • CNC</span>
                     <h3 class="text-2xl font-bold mt-2">NIST SURF Program 2025</h3>
-                    <p class="text-slate-400 mt-4 leading-relaxed">Developed test apparatus for mobile manipulators. Utilized Autodesk Inventor for CAD modeling and CNC machining for hardware prototyping.</p>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Developed a test apparatus for mobile manipulator performance. Utilized Autodesk Inventor for CAD modeling and CNC machining for hardware prototyping.</p>
                 </div>
             </article>
 
             <article class="glass-card">
-                <img src="image_e770f7.jpg" alt="Unitree G1 Robot" class="w-full h-64 object-cover">
+                <img src="image_e770f7.jpg" alt="SURF 2026" class="w-full h-64 object-cover">
                 <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="badge">Public Speaking</span>
-                        <span class="badge">Poster Presentation</span>
-                        <span class="badge">Research</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mt-2">NCUR 2026 Poster Presentation</h3>
-                    <p class="text-slate-400 mt-4 leading-relaxed">I will be participating in the Naitonal Conference on Undergraduate Research's poster presentation session, presenting on word done during my time in NIST's SURF program in 2025.</p>
+                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Research • Data Science</span>
+                    <h3 class="text-2xl font-bold mt-2">SURF 2026</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Advanced research contribution during the 2026 Summer Undergraduate Research Fellowship program, focusing on data-driven metrics in autonomous systems.</p>
                 </div>
             </article>
 
             <article class="glass-card">
-                <img src="image_e770f7.jpg" alt="NIST Lab" class="w-full h-64 object-cover">
+                <img src="image_e770f7.jpg" alt="NCUR" class="w-full h-64 object-cover">
                 <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="badge">Robotics</span>
-                        <span class="badge">Research</span>
-                        <span class="badge">C++</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mt-2">NIST SURF Program 2026</h3>
-                    <p class="text-slate-400 mt-4 leading-relaxed">I've been accepted to the NIST SURF program again for summer 2026 to perform research on benchmarking the performance of mobile manipulator end effector trajectories.</p>
+                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Presentation • Research</span>
+                    <h3 class="text-2xl font-bold mt-2">NCUR Presentation</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Presented undergraduate research findings at the National Conference on Undergraduate Research (NCUR), highlighting key insights in measurement science and robotics.</p>
                 </div>
             </article>
-
         </div>
     </main>
 </body>
