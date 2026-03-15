@@ -1,21 +1,14 @@
 /* Core Branding */
 :root {
     --primary: #0055FF;
-    --accent: #FF3E00;
     --bg-dark: #070B14;
-    --card-bg: #111927;
     --text-main: #F8FAFC;
     --text-muted: #94A3B8;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    margin: 0;
-}
+body { font-family: 'Inter', sans-serif; background-color: var(--bg-dark); color: var(--text-main); margin: 0; }
 
-/* Persistent Navigation */
+/* Consistent Navigation Bar */
 .nav-container {
     position: sticky;
     top: 0;
@@ -29,7 +22,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Pushes logo left, tabs right */
     align-items: center;
     padding: 1rem 1.5rem;
 }
@@ -50,24 +43,4 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--primary);
-}
-
-/* UI Elements */
-.glass-card {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-}
-
-.badge {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-family: monospace;
-}
+.nav-links a:hover, .nav-links a.active { color: var(--primary); }
