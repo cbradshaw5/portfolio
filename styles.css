@@ -1,4 +1,3 @@
-/* Typography & Core Colors */
 :root {
     --primary: #0055FF;
     --accent: #FF3E00;
@@ -12,37 +11,65 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-light);
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Reusable Navigation */
+/* Fixed Navigation */
 .nav-container {
     position: sticky;
     top: 0;
-    z-index: 50;
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(8px);
+    z-index: 100;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Glassmorphism Project Cards */
+.nav-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary);
+}
+
+/* Glassmorphism Cards */
 .glass-card {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
 .glass-card:hover {
+    transform: translateY(-5px);
     border-color: var(--highlight);
-    box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
-    transform: translateY(-4px);
 }
 
-/* Bold Footer */
+/* Footer with Brand Accent */
 footer {
-    border-top: 4px solid var(--accent);
-    padding: 3rem 1rem;
-    text-align: center;
+    margin-top: 5rem;
+    padding: 4rem 1rem;
     background: #090e1a;
+    border-top: 4px solid var(--accent);
+    text-align: center;
 }

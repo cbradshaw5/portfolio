@@ -3,28 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume</title>
+    <title>Resume | Charles Bradshaw</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="max-w-5xl mx-auto py-12 px-6">
+    <header class="nav-container">
+        <nav class="nav-content">
+            <h1 class="text-xl font-bold tracking-tighter">CHARLES BRADSHAW</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-6">
+        <h2 class="text-4xl font-black mb-12">Professional Resume</h2>
+
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-primary mb-6">Education</h2>
-            <div class="glass-card p-6">
-                <p class="text-xl font-bold">Salisbury University | 4.0 GPA</p>
-                <p class="text-slate-400">B.S. Computer Science & Data Science (Expected 2027)</p>
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b border-slate-800 pb-2">Education</h3>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="text-xl font-bold">Salisbury University</h4>
+                    <p class="text-slate-400">B.S. Computer Science & Data Science | Minor in Mathematics</p>
+                    <p class="text-blue-500 font-bold">4.0 GPA | Expected Graduation May 2027</p>
+                </div>
             </div>
         </section>
-        <section>
-            <h2 class="text-3xl font-bold text-primary mb-6">Technical Skills</h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">C++</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">Python</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">ROS2</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">Linux</span>
+
+        <section class="mb-12 space-y-8">
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b border-slate-800 pb-2">Experience</h3>
+            <div>
+                <h4 class="text-xl font-bold">Undergraduate Researcher</h4>
+                <p class="text-blue-400">Salisbury University Robotics Lab | Feb 2026 – Present</p>
+                <p class="text-slate-400 mt-2">Programming a Unitree G1 humanoid robot for construction tasks. Collaborating on guides for G1 connection and LiDAR point cloud visualization.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold">Summer Intern</h4>
+                <p class="text-blue-400">NIST | May 2025 – Aug 2025</p>
+                <p class="text-slate-400 mt-2">Conducted research on mobile manipulator performance. Trained in laser safety, electrical systems, and soldering.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b border-slate-800 pb-2">Technical Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700 text-center">C++ / Java / Python</div>
+                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700 text-center">ROS2 / LiDAR</div>
+                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700 text-center">CAD (Autodesk)</div>
+                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700 text-center">Linux OS</div>
+                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700 text-center">R Language</div>
+                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700 text-center">Arduino / Pi</div>
             </div>
         </section>
     </main>
-    </body>
+    <footer><p class="text-slate-500">© 2026 Charles Bradshaw</p></footer>
+</body>
 </html>

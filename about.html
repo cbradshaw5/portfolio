@@ -3,17 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Charles</title>
+    <title>About | Charles Bradshaw</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="max-w-4xl mx-auto py-20 px-6">
-        <h2 class="text-4xl font-black mb-6">About Me</h2>
-        <div class="text-lg text-slate-300 space-y-4">
-            <p>I am a dedicated Computer Science and Data Science double major at Salisbury University. With a perfect 4.0 GPA, I focus on the technical intersection of autonomous hardware and software.</p>
-            <p>Beyond the lab, I bring strong teamwork and communication skills from 6+ years in high-pressure customer service environments.</p>
+    <header class="nav-container">
+        <nav class="nav-content">
+            <h1 class="text-xl font-bold tracking-tighter">CHARLES BRADSHAW</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-5xl font-black mb-8">About & <span class="text-blue-500">Contact</span></h2>
+            <div class="space-y-6 text-slate-300 text-lg">
+                <p>I am a Computer Science and Data Science double major at Salisbury University, minoring in Mathematics. My professional goal is to advance the fields of autonomous systems and measurement science.</p>
+                <p>Maintaining a 4.0 GPA, I combine academic rigor with practical experience in robotics labs and federal research internships.</p>
+            </div>
+        </div>
+        <div class="space-y-8">
+            <div class="glass-card p-8">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4">
+                        <span class="text-blue-500 font-bold">Email:</span>
+                        <a href="mailto:cmbradshaw03@gmail.com" class="hover:text-white transition">cmbradshaw03@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <span class="text-blue-500 font-bold">Phone:</span>
+                        <span>(410) 845-7905</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <span class="text-blue-500 font-bold">Location:</span>
+                        <span>Mardela Springs, MD</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
-    </body>
+    <footer><p class="text-slate-500">© 2026 Charles Bradshaw</p></footer>
+</body>
 </html>

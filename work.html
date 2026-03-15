@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work & Projects</title>
+    <title>Work & Projects | Charles Bradshaw</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="nav-container">
+        <nav class="nav-content">
+            <h1 class="text-xl font-bold tracking-tighter">CHARLES BRADSHAW</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="max-w-7xl mx-auto py-12 px-6">
-        <h2 class="text-4xl font-black mb-8">Engineering Experience</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article class="glass-card p-6">
-                <span class="text-cyan-400 text-xs font-mono">ROS2 • LiDAR • PYTHON</span>
-                <h3 class="text-xl font-bold mt-2">Unitree G1 Humanoid Research</h3>
-                <p class="text-slate-400 text-sm mt-4">Programming humanoid robots for construction tasks and establishing connection protocols.</p>
+        <h2 class="text-4xl font-black mb-12">Engineering Experience</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <article class="glass-card">
+                <img src="image_e770f7.jpg" alt="Unitree G1 Robot" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Research • ROS2 • LiDAR</span>
+                    <h3 class="text-2xl font-bold mt-2">Salisbury University Robotics Lab</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Currently programming a Unitree G1 humanoid robot for construction tasks. My research focuses on ROS2 integration, Euler Angles for motion control, and LiDAR point cloud visualization.</p>
+                </div>
             </article>
-            <article class="glass-card p-6">
-                <span class="text-cyan-400 text-xs font-mono">CAD • C++ • ELECTRONICS</span>
-                <h3 class="text-xl font-bold mt-2">NIST Summer Internship</h3>
-                <p class="text-slate-400 text-sm mt-4">Developed test apparatus for mobile manipulators using Autodesk Inventor and microcontrollers.</p>
+
+            <article class="glass-card">
+                <img src="image_e770f7.jpg" alt="NIST Lab" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <span class="text-cyan-400 text-xs font-mono uppercase tracking-widest">Internship • CAD • CNC</span>
+                    <h3 class="text-2xl font-bold mt-2">NIST SURF Program 2025</h3>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Developed a specialized test apparatus for measuring mobile manipulator performance. Utilized Autodesk Inventor for CAD modeling and CNC machining for hardware prototyping.</p>
+                </div>
             </article>
         </div>
     </main>
-    </body>
+    <footer><p class="text-slate-500">© 2026 Charles Bradshaw</p></footer>
+</body>
 </html>

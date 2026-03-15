@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charles Bradshaw | Home</title>
+    <title>Charles Bradshaw | Robotics & Data Science</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="nav-container">
-        <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
-            <h1 class="text-xl font-bold">Charles Bradshaw</h1>
-            <ul class="flex gap-6 font-medium">
-                <li><a href="index.html" class="text-blue-500">Home</a></li>
-                <li><a href="work.html" class="hover:text-blue-500">Work</a></li>
-                <li><a href="about.html" class="hover:text-blue-500">About</a></li>
-                <li><a href="resume.html" class="hover:text-blue-500">Resume</a></li>
+        <nav class="nav-content">
+            <h1 class="text-xl font-bold tracking-tighter">CHARLES BRADSHAW</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
     </header>
-    <main class="max-w-7xl mx-auto py-24 px-6 text-center lg:text-left">
-        <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Pioneering Autonomy</h2>
-        <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-6">Robotics & <span class="text-blue-500">Data Science</span></h1>
-        <p class="text-xl text-slate-400 max-w-2xl mb-8">Double major student at Salisbury University specializing in ROS2 and humanoid systems.</p>
-        <a href="work.html" class="bg-blue-600 px-8 py-4 rounded-xl font-bold text-lg inline-block">View Research</a>
+
+    <main class="max-w-7xl mx-auto py-20 px-6 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Pioneering Autonomy</h2>
+            <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-6">Robotics & <span class="text-blue-500">Data Science</span></h1>
+            <p class="text-xl text-slate-400 mb-8 max-w-xl">Researching measurement science in robotics and establishing real-world use cases for emerging autonomous technologies.</p>
+            <div class="flex gap-4">
+                <a href="work.html" class="bg-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-900/20">View Research</a>
+                <a href="resume.html" class="border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition">Portfolio</a>
+            </div>
+        </div>
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
+            <img src="image_e77111.jpg" alt="Mobile Manipulator Robot" class="relative rounded-2xl shadow-2xl w-full object-cover">
+        </div>
     </main>
-    <footer><p>© 2026 Charles Bradshaw | 4.0 GPA Academic Excellence </p></footer>
+
+    <footer><p class="text-slate-500">This portfolio was generated using AI tools. © 2026 Charles Bradshaw</p></footer>
 </body>
 </html>
