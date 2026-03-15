@@ -60,3 +60,12 @@ footer {
     font-size: 0.875rem;
     color: var(--text-muted);
 }
+
+.nav-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, links right */
+    align-items: center;
+    padding: 0 1.5rem;
+}
