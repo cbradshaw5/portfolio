@@ -61,11 +61,33 @@ footer {
     color: var(--text-muted);
 }
 
+/* Navigation Layout */
 .nav-content {
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Pushes logo left, links right */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
 }
